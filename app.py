@@ -17,7 +17,6 @@ def get_user():
     conn = get_db()
     cursor = conn.cursor()
 
-    # VULNERABILITY 1: SQL Injection
     query = f"SELECT id, username, email FROM users WHERE username = '{username}'"
     cursor.execute(query)
 
@@ -38,7 +37,6 @@ def get_user():
 def search():
     query = request.args.get("q", "")
 
-    # VULNERABILITY 2: Command Injection
     result = subprocess.check_output(
         f"grep -R '{query}' ./data",
         shell=True
