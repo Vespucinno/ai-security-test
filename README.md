@@ -1,2 +1,2 @@
 # ai-security-test
-buat nyoba doang
+Testing repository for checking vulnerabilities in a file
