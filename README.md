@@ -1,2 +1,2 @@
 # ai-security-test
-Testing repository for checking vulnerabilities in a file
+Testing repository for identifying vulnerabilities in a code with Cliff
